@@ -246,6 +246,25 @@ h1.hero-h .hl{background:linear-gradient(135deg,#fff 0%,var(--cyan) 100%);-webki
 .mitem p{color:var(--text);font-size:11px;line-height:1.5}
 .mitem-badge{display:inline-block;margin-top:7px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:4px;background:var(--accent-light);color:var(--accent)}
 
+/* ── CARIMBOS 3D ── */
+.stamp-stag{background:linear-gradient(135deg,#FFE9B3,#FFD46A)!important;color:#7A4B00!important}
+.stamp-cta-wrap{text-align:center;margin-top:38px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn-stamp{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--accent),var(--cyan));color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;font-size:14px;transition:.25s;cursor:pointer;border:none;box-shadow:0 8px 24px rgba(79,111,255,.28)}
+.btn-stamp:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(79,111,255,.38)}
+.btn-stamp-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--accent);padding:13px 24px;border-radius:10px;font-weight:600;font-size:14px;border:1.5px solid var(--accent2);transition:.25s;cursor:pointer}
+.btn-stamp-outline:hover{background:var(--accent-light);border-color:var(--accent);transform:translateY(-1px)}
+.stamp-note{font-family:'Space Mono',monospace;font-size:11px;color:var(--text-dim);letter-spacing:.1em;text-transform:uppercase;margin-top:18px}
+
+/* ── AVISO DE DISPONIBILIDADE (Materiais) ── */
+.mat-notice{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#FFF8E1,#FFEDB3);border:1px solid #FFD54F;border-left:4px solid #F9A825;border-radius:12px;padding:14px 18px;margin-bottom:28px;color:#5D4037;font-size:14px;line-height:1.55}
+.mat-notice strong{color:#3E2723;font-weight:700}
+.mat-notice-ic{font-size:22px;flex-shrink:0;line-height:1}
+@media(max-width:500px){.mat-notice{font-size:13px;padding:12px 14px}}
+
+.mitem.soon{opacity:.55;filter:saturate(.6)}
+.mitem.soon .mitem-badge{background:#F0F0F5;color:#8B91BF}
+.fg select option:disabled{color:#B5B9D6}
+
 /* ── SOBRE ── */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:36px}}
@@ -355,6 +374,7 @@ footer{background:var(--navy);padding:54px 0 26px}
     <ul class="nav-links" id="navLinks">
       <li><a href="#como-funciona">Como funciona</a></li>
       <li><a href="#categorias">O que imprimimos</a></li>
+      <li><a href="#carimbos">Confeitaria 3D</a></li>
       <li><a href="#materiais">Materiais</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#reviews">Feedbacks</a></li>
@@ -646,6 +666,36 @@ footer{background:var(--navy);padding:54px 0 26px}
   <div class="wb"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,48 C300,18 600,65 900,44 C1100,30 1300,60 1440,48 L1440,70 L0,70 Z" fill="rgba(0,212,255,0.05)"/></svg><svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,48 C300,18 600,65 900,44 C1100,30 1300,60 1440,48 L1440,70 L0,70 Z" fill="rgba(0,212,255,0.05)"/></svg></div>
 </div>
 
+<!-- CONFEITARIA: Carimbos, Cortadores & Ejetores -->
+<section class="sec sec-tinted" id="carimbos">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="stag stamp-stag">🍫 Linha confeitaria · Em breve</div>
+      <h2 class="sec-h">Carimbos, cortadores <span class="ac">& ejetores 3D</span></h2>
+      <p class="sec-p">Acessórios em impressão 3D pra confeiteiras e doceiras profissionais ou de hobby. Marque seus brigadeiros, corte biscoitos e pasta americana com precisão e dê o acabamento perfeito em cada doce.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="catic reveal"><div class="catic-icon">🍫</div><h3>Carimbos para Brigadeiro</h3><p>Marque seus brigadeiros gourmet com logo, iniciais ou desenhos temáticos. Acabamento profissional em todo lote.</p><span class="catic-tag">Brigadeiro Gourmet</span></div>
+      <div class="catic reveal"><div class="catic-icon">🍪</div><h3>Cortadores</h3><p>Cortadores de biscoito, pasta americana e fondant em qualquer formato — letras, números, temas e personagens.</p><span class="catic-tag">Formatos sob medida</span></div>
+      <div class="catic reveal"><div class="catic-icon">⚙️</div><h3>Ejetores</h3><p>Sistema cortador + ejetor que solta a massa sem deformar. Perfeito pra detalhes finos e relevos delicados.</p><span class="catic-tag">2 em 1</span></div>
+      <div class="catic reveal"><div class="catic-icon">🎂</div><h3>Temas de Festa</h3><p>Linha temática completa: princesas, super-heróis, unicórnio, futebol, datas comemorativas e licenciados.</p><span class="catic-tag">Temático</span></div>
+      <div class="catic reveal"><div class="catic-icon">💎</div><h3>Logo da sua Marca</h3><p>Carimbo com a logomarca da sua doceria — eleve o nível dos seus doces e fortaleça sua identidade visual.</p><span class="catic-tag">Marca Própria</span></div>
+      <div class="catic reveal"><div class="catic-icon">📦</div><h3>Kits Combo</h3><p>Combo cortador + ejetor + carimbo no mesmo tema, com desconto. Ideal pra encomendas e festas grandes.</p><span class="catic-tag">Pacote Promo</span></div>
+    </div>
+    <div class="stamp-cta-wrap reveal">
+      <a href="#contato" class="btn-stamp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Encomendar pelo WhatsApp
+      </a>
+      <a href="https://craftlabstresd.offstore.me/" target="_blank" class="btn-stamp-outline">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        Ver loja online
+      </a>
+    </div>
+    <div class="stamp-note reveal" style="text-align:center">Filamento PLA · Higienização com água morna e sabão neutro · Retirada ou entrega em Macapá</div>
+  </div>
+</section>
+
 <!-- MATERIAIS -->
 <section class="sec sec-tinted" id="materiais">
   <div class="wrap">
@@ -654,13 +704,17 @@ footer{background:var(--navy);padding:54px 0 26px}
       <h2 class="sec-h">Escolha o <span class="ac">material certo</span></h2>
       <p class="sec-p">Trabalhamos com os principais filamentos e resinas do mercado para garantir o resultado ideal para cada projeto.</p>
     </div>
+    <div class="mat-notice reveal">
+      <span class="mat-notice-ic">🟢</span>
+      <div><strong>Disponível agora:</strong> PLA · Os demais materiais estão sendo preparados e entram em breve no nosso catálogo.</div>
+    </div>
     <div class="mat-grid">
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#F4D03F,#F39C12)"></div><h4>PLA</h4><p>Versátil, fácil de imprimir. Ideal para decoração e protótipos.</p><span class="mitem-badge">MAIS USADO</span></div>
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#E74C3C,#C0392B)"></div><h4>ABS</h4><p>Resistência mecânica e térmica. Para peças funcionais.</p><span class="mitem-badge">RESISTENTE</span></div>
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#3498DB,#2980B9)"></div><h4>PETG</h4><p>Melhor dos dois mundos: resistência e fácil impressão.</p><span class="mitem-badge">EQUILIBRADO</span></div>
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#9B59B6,#6C3483)"></div><h4>TPU</h4><p>Flexível e elástico. Perfeito para capas, juntas e solas.</p><span class="mitem-badge">FLEXÍVEL</span></div>
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#1ABC9C,#16A085)"></div><h4>Resina</h4><p>Alta resolução e detalhes finos. Para miniaturas e joias.</p><span class="mitem-badge">ULTRA DETALHE</span></div>
-      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#95A5A6,#7F8C8D)"></div><h4>Nylon</h4><p>Alta resistência e leveza. Para peças de engenharia.</p><span class="mitem-badge">ENGENHARIA</span></div>
+      <div class="mitem reveal"><div class="mitem-dot" style="background:linear-gradient(135deg,#F4D03F,#F39C12)"></div><h4>PLA</h4><p>Versátil, fácil de imprimir. Ideal para decoração, protótipos e linha de confeitaria.</p><span class="mitem-badge">DISPONÍVEL</span></div>
+      <div class="mitem reveal soon"><div class="mitem-dot" style="background:linear-gradient(135deg,#E74C3C,#C0392B)"></div><h4>ABS</h4><p>Resistência mecânica e térmica. Para peças funcionais.</p><span class="mitem-badge">EM BREVE</span></div>
+      <div class="mitem reveal soon"><div class="mitem-dot" style="background:linear-gradient(135deg,#3498DB,#2980B9)"></div><h4>PETG</h4><p>Melhor dos dois mundos: resistência e fácil impressão.</p><span class="mitem-badge">EM BREVE</span></div>
+      <div class="mitem reveal soon"><div class="mitem-dot" style="background:linear-gradient(135deg,#9B59B6,#6C3483)"></div><h4>TPU</h4><p>Flexível e elástico. Perfeito para capas, juntas e solas.</p><span class="mitem-badge">EM BREVE</span></div>
+      <div class="mitem reveal soon"><div class="mitem-dot" style="background:linear-gradient(135deg,#1ABC9C,#16A085)"></div><h4>Resina</h4><p>Alta resolução e detalhes finos. Para miniaturas e joias.</p><span class="mitem-badge">EM BREVE</span></div>
+      <div class="mitem reveal soon"><div class="mitem-dot" style="background:linear-gradient(135deg,#95A5A6,#7F8C8D)"></div><h4>Nylon</h4><p>Alta resistência e leveza. Para peças de engenharia.</p><span class="mitem-badge">EM BREVE</span></div>
     </div>
   </div>
 </section>
@@ -740,10 +794,29 @@ footer{background:var(--navy);padding:54px 0 26px}
           <div class="fg"><label>Seu nome</label><input type="text" placeholder="João Silva" id="fn"/></div>
           <div class="fg"><label>WhatsApp</label><input type="text" placeholder="(96) 99999-9999" id="fw"/></div>
         </div>
-        <div class="fg"><label>Material desejado</label>
-          <select id="fm"><option>Não sei / Preciso de indicação</option><option>PLA</option><option>ABS</option><option>PETG</option><option>TPU (flexível)</option><option>Resina</option><option>Nylon</option></select>
+        <div class="frow">
+          <div class="fg"><label>Tipo de pedido</label>
+            <select id="ft">
+              <option value="Impressão de peça (geral)">Impressão de peça (geral)</option>
+              <option value="Carimbo para brigadeiro">🍫 Carimbo para brigadeiro</option>
+              <option value="Cortador (biscoito / pasta americana)">🍪 Cortador (biscoito / pasta americana)</option>
+              <option value="Ejetor / cortador com ejetor">⚙️ Ejetor / cortador com ejetor</option>
+              <option value="Kit combo (carimbo + cortador + ejetor)">📦 Kit combo confeitaria</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="fg"><label>Material</label>
+            <select id="fm">
+              <option value="PLA">PLA — disponível</option>
+              <option value="ABS" disabled>ABS (em breve)</option>
+              <option value="PETG" disabled>PETG (em breve)</option>
+              <option value="TPU" disabled>TPU flexível (em breve)</option>
+              <option value="Resina" disabled>Resina (em breve)</option>
+              <option value="Nylon" disabled>Nylon (em breve)</option>
+            </select>
+          </div>
         </div>
-        <div class="fg"><label>Descreva sua peça</label><textarea placeholder="Ex: 1 peça, escala 1:1, cor preta, precisa de resistência mecânica..." id="fd"></textarea></div>
+        <div class="fg"><label>Descreva seu pedido</label><textarea placeholder="Ex: 1 carimbo de brigadeiro com a logo da minha doceria, diâmetro 3cm. Ou: 5 cortadores de biscoito tema unicórnio, 6cm." id="fd"></textarea></div>
         <button class="fbtn" onclick="sendWA()">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Enviar via WhatsApp
@@ -775,8 +848,8 @@ footer{background:var(--navy);padding:54px 0 26px}
           <a href="https://craftlabstresd.offstore.me/" target="_blank"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg></a>
         </div>
       </div>
-      <div class="fl"><h5>Navegação</h5><ul><li><a href="#sobre">Sobre</a></li><li><a href="#categorias">O que imprimimos</a></li><li><a href="#materiais">Materiais</a></li><li><a href="https://craftlabstresd.offstore.me/" target="_blank">Loja de Produtos</a></li><li><a href="#contato">Orçamento</a></li></ul></div>
-      <div class="fl"><h5>Impressão 3D</h5><ul><li><a href="#">Impressão FDM</a></li><li><a href="#">Impressão em Resina</a></li><li><a href="#">Pedidos em Volume</a></li><li><a href="#">Retirada ou Entrega Local</a></li></ul></div>
+      <div class="fl"><h5>Navegação</h5><ul><li><a href="#sobre">Sobre</a></li><li><a href="#categorias">O que imprimimos</a></li><li><a href="#carimbos">Confeitaria 3D</a></li><li><a href="#materiais">Materiais</a></li><li><a href="https://craftlabstresd.offstore.me/" target="_blank">Loja de Produtos</a></li><li><a href="#contato">Orçamento</a></li></ul></div>
+      <div class="fl"><h5>Produtos & Serviços</h5><ul><li><a href="#categorias">Impressão FDM</a></li><li><a href="#materiais">Impressão em Resina</a></li><li><a href="#carimbos">Carimbos para Brigadeiro</a></li><li><a href="#carimbos">Cortadores & Ejetores</a></li><li><a href="#contato">Retirada ou Entrega Local</a></li></ul></div>
     </div>
     <div class="fbot">© 2025 CraftLabs 3D · Macapá — AP · Todos os direitos reservados.</div>
   </div>
@@ -794,10 +867,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
 function sendWA(){
   const n=document.getElementById('fn')?.value||'';
   const w=document.getElementById('fw')?.value||'';
+  const t=document.getElementById('ft')?.value||'';
   const m=document.getElementById('fm')?.value||'';
   const d=document.getElementById('fd')?.value||'';
-  if(!n&&!d){alert('Preencha pelo menos seu nome e a descrição da peça.');return}
-  window.open(`https://wa.me/5596991901661?text=${encodeURIComponent(`Olá! Vim pelo site CraftLabs 3D.\n\n*Nome:* ${n}\n*WhatsApp:* ${w}\n*Material:* ${m}\n*Descrição:* ${d}`)}`,'_blank');
+  if(!n&&!d){alert('Preencha pelo menos seu nome e a descrição do pedido.');return}
+  window.open(`https://wa.me/5596991901661?text=${encodeURIComponent(`Olá! Vim pelo site CraftLabs 3D.\n\n*Nome:* ${n}\n*WhatsApp:* ${w}\n*Tipo de pedido:* ${t}\n*Material:* ${m}\n*Descrição:* ${d}`)}`,'_blank');
 }
 </script>
 </body>
